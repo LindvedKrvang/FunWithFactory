@@ -9,7 +9,7 @@ package funwithfactory.be;
  *
  * @author Rasmus
  */
-public interface iDocumentReader {
+public interface IDocumentReader {
 
     public String getText();
 }

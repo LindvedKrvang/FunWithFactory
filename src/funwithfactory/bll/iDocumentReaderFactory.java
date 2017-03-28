@@ -5,13 +5,13 @@
  */
 package funwithfactory.bll;
 
-import funwithfactory.be.iDocumentReader;
+import funwithfactory.be.IDocumentReader;
 
 /**
  *
  * @author Rasmus
  */
-public interface iDocumentReaderFactory {
+public interface IDocumentReaderFactory {
 
-    public iDocumentReader getDocumentReader(String protocol);
+    public IDocumentReader getDocumentReader(String protocol);
 }
