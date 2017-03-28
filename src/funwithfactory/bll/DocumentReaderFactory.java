@@ -8,16 +8,16 @@ package funwithfactory.bll;
 import funwithfactory.be.HTMLReader;
 import funwithfactory.be.PDFReader;
 import funwithfactory.be.TextFileReader;
-import funwithfactory.be.iDocumentReader;
+import funwithfactory.be.IDocumentReader;
 
 /**
  *
  * @author Rasmus
  */
-public class DocumentReaderFactory implements iDocumentReaderFactory {
+public class DocumentReaderFactory implements IDocumentReaderFactory {
 
     @Override
-    public iDocumentReader getDocumentReader(String protocol) {
+    public IDocumentReader getDocumentReader(String protocol) {
         switch (protocol) {
             case "PDF":
                 return new PDFReader();

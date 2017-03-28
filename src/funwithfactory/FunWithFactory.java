@@ -5,9 +5,9 @@
  */
 package funwithfactory;
 
-import funwithfactory.be.iDocumentReader;
 import funwithfactory.bll.DocumentReaderFactory;
-import funwithfactory.bll.iDocumentReaderFactory;
+import funwithfactory.be.IDocumentReader;
+import funwithfactory.bll.IDocumentReaderFactory;
 
 /**
  *
@@ -20,11 +20,11 @@ public class FunWithFactory {
      */
     public static void main(String[] args) {
 
-        iDocumentReaderFactory factory = new DocumentReaderFactory();
+        IDocumentReaderFactory factory = new DocumentReaderFactory();
 
-        iDocumentReader pdf = factory.getDocumentReader("PDF");
-        iDocumentReader html = factory.getDocumentReader("HTML");
-        iDocumentReader text = factory.getDocumentReader("Text");
+        IDocumentReader pdf = factory.getDocumentReader("PDF");
+        IDocumentReader html = factory.getDocumentReader("HTML");
+        IDocumentReader text = factory.getDocumentReader("Text");
 
         System.out.println(pdf.getText());
         System.out.println(html.getText());

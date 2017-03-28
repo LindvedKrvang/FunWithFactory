@@ -9,7 +9,7 @@ package funwithfactory.be;
  *
  * @author Rasmus
  */
-public class PDFReader implements iDocumentReader {
+public class PDFReader implements IDocumentReader {
 
     @Override
     public String getText() {
